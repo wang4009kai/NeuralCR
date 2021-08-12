@@ -66,6 +66,7 @@ def main():
   ont = Ontology(args.obofile,args.oboroot)
 
   model = ncrmodel.NCR(args, ont, args.fasttext)
+  negative_samples
   if (not args.no_negs) and args.neg_file != "":
     negative_samples = sample_negatives_from_file(args.neg_file, args.num_negs)
 
